@@ -412,7 +412,7 @@ public class Heartbeater extends Thread {
 							int prefixLength = address.getNetworkPrefixLength();
 							String subnet = ip + "/" + prefixLength;
 
-							System.out.println("Subnet "+subnet);
+//							System.out.println("Subnet "+subnet);
 
 							SubnetUtils utils = new SubnetUtils(subnet);
 							SubnetInfo info = utils.getInfo();
