@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="video">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/video/javacv-windows-x86_64.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/video/javacv.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/video/javacpp.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

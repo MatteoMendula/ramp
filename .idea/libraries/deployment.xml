@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="deployment">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/deployment/RampStandAloneClient_2020-03-25.zip!/" />
+      <root url="jar://$PROJECT_DIR$/deployment/RampStandAloneClient_2019-10-31.zip!/" />
+      <root url="jar://$PROJECT_DIR$/deployment/RampStandAloneClient_2020-04-03.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
