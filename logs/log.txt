@@ -269,3 +269,8 @@
 2020-09-21 21:43:48: ContinuityManager ENABLED
 2020-09-21 21:43:53: OpportunisticNetworkingManager START
 2020-09-21 21:44:13: TcpDispatcher sent unicast packet: destS.getRemoteSocketAddress() /192.168.56.1:3300
+2020-09-21 21:45:37: ContinuityManager ENABLED
+2020-09-21 21:45:42: OpportunisticNetworkingManager START
+2020-09-21 21:49:34: ContinuityManager ENABLED
+2020-09-21 21:49:39: OpportunisticNetworkingManager START
+2020-09-21 21:49:47: TcpDispatcher sent unicast packet: destS.getRemoteSocketAddress() /192.168.56.1:3300
