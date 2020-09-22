@@ -114,18 +114,10 @@ public class Heartbeater extends Thread {
 	{
 		String[] groups = ip.split("\\.");
 
-		if (groups.length != 4)
+		if (ip.matches(".*[a-zA-Z].*") ){ //<------------------ ipv6 ip
 			return false;
-
-		try {
-			return Arrays.stream(groups)
-					.filter(s -> s.length() > 1 && s.startsWith("0"))
-					.map(Integer::parseInt)
-					.filter(i -> (i >= 0 && i <= 255))
-					.count() == 4;
-
-		} catch(NumberFormatException e) {
-			return false;
+		}else{
+			return true;
 		}
 	}
 
@@ -401,10 +393,10 @@ public class Heartbeater extends Thread {
 				} else {	// NOT Android
 //					System.out.println("netA.getInterfaceAddresses() "+netA.getInterfaceAddresses());
 					for (InterfaceAddress address : netA.getInterfaceAddresses()) {
-
+//						System.out.println("-------------------address is "+address);
 						// Validate an IPv4 address
 						if (isValidInet4Address(""+address)) {
-							System.out.print("The IP address " + address + " is valid");
+							System.out.println("The IP address " + address + " is valid");
 							InetAddress inetAddress = address.getAddress();
 							DatagramSocket ds = new DatagramSocket(0, inetAddress);
 
@@ -422,7 +414,7 @@ public class Heartbeater extends Thread {
 							Thread.sleep(50);
 						}
 						else {
-							System.out.print("The IP address " + address + " isn't valid. Then skipped.");
+							System.out.println("The IP address " + address + " isn't valid. Then skipped.");
 						}
 					}
 				}

@@ -49,7 +49,7 @@ public class UnicastHeader extends GenericPacket {
             int expiry,
             int connectTimeout,
             int flowId,
-            long dataType
+            long dataType //----- matte ---------> may they are already defined, place here SenML
     ) {
         this.id = RampEntryPoint.nextRandomInt(); //Stefano Lanzone
         this.setDest(destString);
