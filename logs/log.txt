@@ -315,3 +315,11 @@
 2020-09-23 10:06:58: OpportunisticNetworkingManager DISABLED
 2020-09-23 10:06:58: OpportunisticNetworkingManager END
 2020-10-06 12:48:55: TcpDispatcher sent unicast packet: destS.getRemoteSocketAddress() /127.0.1.1:3300
+2020-10-06 12:57:23: TcpDispatcher sent unicast packet: destS.getRemoteSocketAddress() /127.0.1.1:3300
+2020-10-06 12:58:34: TcpDispatcher sent unicast packet: destS.getRemoteSocketAddress() /127.0.1.1:3300
+2020-10-06 12:59:01: TcpDispatcher sent unicast packet: destS.getRemoteSocketAddress() /127.0.1.1:3300
+2020-10-06 12:59:13: TcpDispatcher sent unicast packet: destS.getRemoteSocketAddress() /127.0.1.1:3300
+2020-10-06 13:00:40: TcpDispatcher sent unicast packet: destS.getRemoteSocketAddress() /127.0.1.1:3300
+2020-10-06 13:00:46: TcpDispatcher sent unicast packet: destS.getRemoteSocketAddress() /127.0.1.1:3300
+2020-10-06 13:00:54: TcpDispatcher sent unicast packet: destS.getRemoteSocketAddress() /127.0.1.1:3300
+2020-10-06 20:25:58: TcpDispatcher sent unicast packet: destS.getRemoteSocketAddress() /192.168.1.91:1979
