@@ -274,3 +274,44 @@
 2020-09-21 21:49:34: ContinuityManager ENABLED
 2020-09-21 21:49:39: OpportunisticNetworkingManager START
 2020-09-21 21:49:47: TcpDispatcher sent unicast packet: destS.getRemoteSocketAddress() /192.168.56.1:3300
+2020-09-21 21:50:34: ContinuityManager ENABLED
+2020-09-21 21:50:39: OpportunisticNetworkingManager START
+2020-09-21 21:50:56: TcpDispatcher sent unicast packet: destS.getRemoteSocketAddress() /192.168.56.1:3300
+2020-09-22 10:23:33: ContinuityManager ENABLED
+2020-09-22 10:23:38: OpportunisticNetworkingManager START
+2020-09-22 10:24:21: TcpDispatcher sent unicast packet: destS.getRemoteSocketAddress() /192.168.56.1:3300
+2020-09-22 10:24:40: TcpDispatcher sent unicast packet: destS.getRemoteSocketAddress() /192.168.56.1:3300
+2020-09-22 10:24:51: TcpDispatcher sent unicast packet: destS.getRemoteSocketAddress() /192.168.56.1:3300
+2020-09-22 10:25:10: TcpDispatcher sent unicast packet: destS.getRemoteSocketAddress() /192.168.56.1:3300
+2020-09-22 12:15:51: OpportunisticNetworkingManager DISABLED
+2020-09-22 12:15:51: ContinuityManager DISABLED
+2020-09-22 12:15:51: OpportunisticNetworkingManager: this should happen only at exit
+2020-09-22 12:15:51: OpportunisticNetworkingManager END
+2020-09-22 12:15:51: OpportunisticNetworkingManager FINISHED
+2020-09-22 12:15:59: ContinuityManager ENABLED
+2020-09-22 12:16:04: OpportunisticNetworkingManager START
+2020-09-22 12:46:29: ContinuityManager ENABLED
+2020-09-22 12:46:34: OpportunisticNetworkingManager START
+2020-09-22 12:46:57: ContinuityManager ENABLED
+2020-09-22 12:47:02: OpportunisticNetworkingManager START
+2020-09-22 12:50:03: OpportunisticNetworkingManager DISABLED
+2020-09-22 12:50:03: ContinuityManager DISABLED
+2020-09-22 12:50:03: OpportunisticNetworkingManager END
+2020-09-22 12:50:03: OpportunisticNetworkingManager FINISHED
+2020-09-22 12:50:03: OpportunisticNetworkingManager: this should happen only at exit
+2020-09-22 16:27:44: ContinuityManager ENABLED
+2020-09-22 16:27:49: OpportunisticNetworkingManager START
+2020-09-22 16:27:52: ContinuityManager DISABLED
+2020-09-22 16:27:52: OpportunisticNetworkingManager: this should happen only at exit
+2020-09-22 16:27:52: OpportunisticNetworkingManager DISABLED
+2020-09-22 16:27:52: OpportunisticNetworkingManager END
+2020-09-22 16:27:52: OpportunisticNetworkingManager FINISHED
+2020-09-23 09:42:31: ContinuityManager ENABLED
+2020-09-23 09:42:36: OpportunisticNetworkingManager START
+2020-09-23 09:43:14: TcpDispatcher sent unicast packet: destS.getRemoteSocketAddress() /192.168.56.1:3300
+2020-09-23 10:06:58: OpportunisticNetworkingManager: this should happen only at exit
+2020-09-23 10:06:58: ContinuityManager DISABLED
+2020-09-23 10:06:58: OpportunisticNetworkingManager FINISHED
+2020-09-23 10:06:58: OpportunisticNetworkingManager DISABLED
+2020-09-23 10:06:58: OpportunisticNetworkingManager END
+2020-10-06 12:48:55: TcpDispatcher sent unicast packet: destS.getRemoteSocketAddress() /127.0.1.1:3300
