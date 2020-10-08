@@ -2,4 +2,4 @@ ramp.sh
 ramp.props
 logs/
 output_internal.csv
-temp/sdnClient/topologyGraph.dgs
+temp/
