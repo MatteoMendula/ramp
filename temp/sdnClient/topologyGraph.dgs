@@ -1,0 +1,11 @@
+DGS004
+null 0 0
+cg  "ui.quality":true
+cg  "ui.antialias":true
+cg  "ui.stylesheet":"node {fill-color: blue; size: 40px; }"
+an "90"
+cn "90"  "network_stats_192.168.1.90":"it.unibo.deis.lia.ramp.util.NetworkInterfaceStats@673d37b6"
+cn "90"  "ui.label":"90"
+cn "90"  "port":35863
+cn "90"  "ui.style":"fill-color: rgb(35,118,185);"
+cn "90"  "last_update":1602066849412

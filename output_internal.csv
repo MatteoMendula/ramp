@@ -1,0 +1,4 @@
+timestamp,controlpriority sentbytes,maxpriority_sentbytes,lowpriority_1_sentbytes,lowpriority_2_sentbytes,lowpriority_3_sentbytes
+12:39:10.084,1259,,,,
+12:39:10.110,1150,,,,
+12:39:10.110,1111,,,,
