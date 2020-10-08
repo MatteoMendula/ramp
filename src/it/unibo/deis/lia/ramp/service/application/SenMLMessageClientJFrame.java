@@ -120,7 +120,6 @@ public class SenMLMessageClientJFrame extends javax.swing.JFrame {
         //int destNodeId = this.jTextFieldDestNodeId.getText().hashCode();
         int destNodeId = Integer.parseInt(this.jTextFieldDestNodeId.getText());
         int timeout = Integer.parseInt(this.jTextFieldPacketDeliveryTimeout.getText());
-        System.out.println("----------------------------------------------> MAtteoooooooo");
         mc.sendMessage(destNodeId, mess, timeout);
     }//GEN-LAST:event_jButtonSendMessageActionPerformed
 

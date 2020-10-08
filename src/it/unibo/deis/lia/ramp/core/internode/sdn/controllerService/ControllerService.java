@@ -254,20 +254,20 @@ public class ControllerService extends Thread {
         /*
          * TODO Remove me
          */
-        File outputFile = new File(sdnControllerDirectory + "/" + "controllerServiceLog" + Dispatcher.getLocalRampId() + ".txt");
-
-        if (outputFile.exists()) {
-            outputFile.delete();
-        }
-        outputFile.createNewFile();
-
-        try {
-            printWriter = new PrintWriter(new FileWriter(outputFile, true));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        printWriter.println("ControllerService NodeId=" + Dispatcher.getLocalRampId() + " TEST LOG");
-        printWriter.flush();
+        //        File outputFile = new File(sdnControllerDirectory + "/" + "controllerServiceLog" + Dispatcher.getLocalRampId() + ".txt");
+        //
+        //        if (outputFile.exists()) {
+        //            outputFile.delete();
+        //        }
+        ////        outputFile.createNewFile();
+        //
+        //        try {
+        //            printWriter = new PrintWriter(new FileWriter(outputFile, true));
+        //        } catch (FileNotFoundException e) {
+        //            e.printStackTrace();
+        //        }
+        //        printWriter.println("ControllerService NodeId=" + Dispatcher.getLocalRampId() + " TEST LOG");
+        //        printWriter.flush();
     }
 
     public synchronized static ControllerService getInstance() {
