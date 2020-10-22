@@ -4,8 +4,25 @@ cg  "ui.quality":true
 cg  "ui.antialias":true
 cg  "ui.stylesheet":"node {fill-color: blue; size: 40px; }"
 an "90"
-cn "90"  "network_stats_192.168.1.90":"it.unibo.deis.lia.ramp.util.NetworkInterfaceStats@673d37b6"
+cn "90"  "network_stats_192.168.1.90":"it.unibo.deis.lia.ramp.util.NetworkInterfaceStats@3aae2c59"
 cn "90"  "ui.label":"90"
-cn "90"  "port":35863
+cn "90"  "port":40349
 cn "90"  "ui.style":"fill-color: rgb(35,118,185);"
-cn "90"  "last_update":1602066849412
+cn "90"  "last_update":1603365301184
+an "91"
+cn "91"  "network_stats_192.168.1.91":"it.unibo.deis.lia.ramp.util.NetworkInterfaceStats@3469d57c"
+cn "91"  "ui.label":"91"
+cn "91"  "port":34701
+cn "91"  "ui.style":"fill-color: rgb(35,118,185);"
+cn "91"  "last_update":1603365300315
+ae "9091_0" "90"  "91"
+ce "9091_0"  "subnet_info":"CIDR Signature:	[192.168.1.91/24] Netmask: [255.255.255.0]
+Network:	[192.168.1.0]
+Broadcast:	[192.168.1.255]
+First Address:	[192.168.1.1]
+Last Address:	[192.168.1.254]
+# Addresses:	[254]
+"
+ce "9091_0"  "ui.label":"192.168.1.90 - 192.168.1.91"
+ce "9091_0"  "address_90":"192.168.1.90"
+ce "9091_0"  "address_91":"192.168.1.91"
