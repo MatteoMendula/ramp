@@ -22,11 +22,19 @@
 		<layout class="org.apache.log4j.PatternLayout">
 			<param name="ConversionPattern" value="%d{HH:mm:ss.SSS} %5p [%t] (%F:%L) - %m%n" />
 		</layout>
+<<<<<<< HEAD
 		<param name="Threshold" value="DEBUG" />
 		<!-- <filter class="org.apache.log4j.varia.LevelRangeFilter">
             <param name="LevelMin" value="DEBUG"/>
             <param name="LevelMax" value="INFO"/>
         </filter> -->
+=======
+		<!--<param name="Threshold" value="DEBUG" />-->
+		<!--<filter class="org.apache.log4j.varia.LevelRangeFilter">-->
+            <!--<param name="LevelMin" value="DEBUG"/>-->
+            <!--<param name="LevelMax" value="INFO"/>-->
+        <!--</filter>-->
+>>>>>>> ec124b5ce623c3c1db269f5270c1080926a4d40c
 	</appender>
 	
 	
