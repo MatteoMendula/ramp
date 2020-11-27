@@ -5,30 +5,34 @@ import it.unibo.deis.lia.ramp.core.internode.sdn.advancedDataPlane.dataTypesMana
 import java.io.Serializable;
 
 /**
- * @author Dmitrij David Padalino Montenero
+ * @author Matteo Mendula
  */
-public class InfoDataType extends AbstractDataType implements Serializable {
+public class VideoDataType extends AbstractDataType implements Serializable {
 
-    private static final long serialVersionUID = -1631743108532280182L;
-
+    private static final long serialVersionUID = 7332943357871452826L;
     private int value;
 
-    public InfoDataType() {
+    public VideoDataType() {
         super();
         this.value = -1;
     }
 
-    public InfoDataType(int seqNumber, int payloadSize, int value) {
+    public VideoDataType(int seqNumber, int payloadSize, int value) {
         super(seqNumber, payloadSize);
         this.value = value;
     }
 
-    public void setValue(int value) {
-        this.value = value;
+//    ----------------------- GETTER
+
+
+    public long getValue() {
+        return this.value;
     }
 
-    public int getValue() {
-        return value;
+//    ----------------------- SETTER
+
+    public void setValue(int value) {
+        this.value = value;
     }
 
     public int getSeqNumber() {
@@ -40,4 +44,5 @@ public class InfoDataType extends AbstractDataType implements Serializable {
     public long getDelayable() {
         return super.getDelayable();
     }
+
 }

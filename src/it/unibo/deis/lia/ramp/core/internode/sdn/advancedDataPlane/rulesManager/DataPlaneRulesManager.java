@@ -317,7 +317,7 @@ public class DataPlaneRulesManager {
                 method.invoke(dataPlaneRule, up);
             } catch (NoSuchMethodException e) {
                 /*
-                 * This means that the empty method of AbstractDataPlaneRule has not been overriden.
+                 * This means that the empty method of AbstractDataPlaneRule has not been overwritten.
                  */
                 continue;
             } catch (IllegalAccessException | InvocationTargetException e) {
