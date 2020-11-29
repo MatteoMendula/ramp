@@ -4,8 +4,9 @@ The following code has been developed for the "Digital Twin Management in Indust
 
 The testbed simulates the communication between two clients by means of an intermediary node. The sender and the receiver do not communicate directly each other so a Controller is in charge of coordinate their communication by easing the discovery process of a possible route.
 
-![Alt text](../../../../images/digital_twin.jpg?raw=true "RAMP Logo") 
-
+<p align="center">
+  <img src="http://mattestorage.it/dt/digital_twin.jpg"/>
+</p>
 
 ## Testbed description
 
@@ -32,5 +33,7 @@ The drowback is that packets are not wrapped at the application level anymore, s
 
 The graph below shows the relation between the simulation time and the corresponding latencies while indicating the how external metrics are changed.
 
-![Alt text](../../../../images/graph.png?raw=true "RAMP Logo") 
-
+[comment]: <> ![Alt text](http://mattestorage.it/dt/graph.png "RESULTS") 
+<p align="center">
+  <img src="http://mattestorage.it/dt/graph.png" alt="RAMP scenario"/>
+</p>
