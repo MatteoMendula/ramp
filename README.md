@@ -1,7 +1,9 @@
 ![Alt text](./images/ramp_logo.png?raw=true "RAMP Logo") 
 # Real Ad-hoc Multi-hop Peer-to-peer (RAMP) Project 
 
-RAMP supports transparent management of multi-hop heterogeneous spontaneous networks performing middleware-layer routing (without the need of operating system routing support).
+RAMP supports transparent management of multi-hop heterogeneous spontaneous networks performing middleware-layer routing without the need of operating system routing support.
+
+In any case, when the application routing does not meet the requirements in terms of latency, RAMP is able to ease the negotiation of os routing strategies at the application level to make the clients capable of sending packets at the os level.
 
 RAMP provides end-to-end communication primitives, such as sendUnicast, sendBroadcast and receive, and peer-to-peer service-oriented features, such as registerService and findServices.
 
