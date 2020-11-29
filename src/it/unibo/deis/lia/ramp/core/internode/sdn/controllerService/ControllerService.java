@@ -1134,6 +1134,9 @@ public class ControllerService extends Thread {
              * add it to the flow paths database and
              * send it to the source node.
              */
+
+            List<Integer> clientsToNotify = Arrays.asList(92);
+
             trafficCongestionLevel trafficCongestionLevel = requestMessage.getTrafficCongestionType();
 
             if(trafficCongestionLevel != null) {
@@ -1165,7 +1168,12 @@ public class ControllerService extends Thread {
                          * TODO Remove me
                          */
                         log("NOTIFY_CONTROLLER_ABOUT_TRAFFIC_STATE [MEDIUM_CONGESTION]received from nodeId: " + clientNodeId);
-//                        ruleToActive = "DT_MediumCongestionDataPlaneRule";
+                        for (String dataType : dataTypesToConsider) {
+                            controllerService.removeDataPlaneRule(dataType, "DT_LowCongestionDataPlaneRule", clientsToNotify);
+                            log("Removed: " + ruleToActive + " to dataType: " +dataType);
+                        }
+                        log("NOTIFY_CONTROLLER_ABOUT_TRAFFIC_STATE [MEDIUM_CONGESTION]setting medium rule: " + clientNodeId);
+                        ruleToActive = "DT_MediumCongestionDataPlaneRule";
                         break;
                     case HIGH_CONGESTION:
                         /*
@@ -1190,7 +1198,6 @@ public class ControllerService extends Thread {
 //                    e.printStackTrace();
 //                }
 
-                List<Integer> clientsToNotify = Arrays.asList(92);
 
                 // applying the corresponding rule to all dataTypesToConsider
                 if (ruleToActive != null){

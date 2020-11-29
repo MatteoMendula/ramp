@@ -135,7 +135,7 @@ public class DTControllerClientReceiver {
                     }
 
                     if(mediumCongestionRuleDetected && !mediumCongestionRuleRequired){
-//                        controllerClient.notifyControllerAboutTrafficState(MEDIUM_CONGESTION);
+                        controllerClient.notifyControllerAboutTrafficState(MEDIUM_CONGESTION);
                         mediumCongestionRuleRequired = true;
                         finalPrintWriter.println("-------------------------------> MEDIUM_CONGESTION = true;");
                         System.out.println("-------------------------------> MEDIUM_CONGESTION = true;");
@@ -281,7 +281,7 @@ public class DTControllerClientReceiver {
 //                                    controllerClient.notifyControllerAboutTrafficState(LOW_CONGESTION);
 //                                    finalPrintWriter.println("-------------------------------> LOW_CONGESTION = true;");
                                     latencyTenCheck++;
-                                    if (latencyTenCheck == 10){
+                                    if (latencyTenCheck == 20){
 //                                    if (true){
                                         lowCongestionRuleDetected = true;
                                         latencyTenCheck= 0;
@@ -293,7 +293,7 @@ public class DTControllerClientReceiver {
 //                                            controllerClient.notifyControllerAboutTrafficState(MEDIUM_CONGESTION);
 //                                            finalPrintWriter.println("-------------------------------> MEDIUM_CONGESTION = true;");
                                             latencyTenCheck++;
-                                            if (latencyTenCheck == 10){
+                                            if (latencyTenCheck == 20){
                                                 mediumCongestionRuleDetected = true;
                                                 latencyTenCheck= 0;
                                             }
@@ -304,7 +304,7 @@ public class DTControllerClientReceiver {
                                                  */
 //                                                finalPrintWriter.println("-------------------------------> osLevelRoutingActive = true;");
                                                 latencyTenCheck++;
-                                                if (latencyTenCheck == 10){
+                                                if (latencyTenCheck == 20){
                                                     highCongestionRuleDetected = true;
                                                     latencyTenCheck= 0;
                                                 }

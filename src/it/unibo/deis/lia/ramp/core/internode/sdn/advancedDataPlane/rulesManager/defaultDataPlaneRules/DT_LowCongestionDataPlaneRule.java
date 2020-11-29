@@ -28,17 +28,13 @@ public class DT_LowCongestionDataPlaneRule extends AbstractDataPlaneRule impleme
     private long videoDataTypeId = 7332943357871452826L;
     private long vibrationalDataTypeId = 793107902207408161L;
 
-    private long infoDelay = 50;
-    private long videoDelay = 100;
-    private long vibrationalDelay = 100;
+    private long infoDelay = 10;
+    private long videoDelay = 50;
+    private long vibrationalDelay = 50;
 
-//    private long infoDropProbability = 25;
-//    private long videoDropProbability = 33;
-//    private long vibrationalDropProbability = 33;
-
-    private long infoDropProbability = 37; //-> 50
-    private long videoDropProbability = 37; //-> 50
-    private long vibrationalDropProbability = 37; //-> 50
+    private long infoDropProbability = 15;
+    private long videoDropProbability = 15;
+    private long vibrationalDropProbability = 15;
 
     private long[] dataTypeIdsToConsider = {videoDataTypeId,vibrationalDataTypeId,infoDataTypeId};
 
@@ -54,7 +50,7 @@ public class DT_LowCongestionDataPlaneRule extends AbstractDataPlaneRule impleme
     @Override
     public void applyRuleToUnicastHeader(UnicastHeader uh) {
         long dataTypeId = uh.getDataType();
-        System.out.println("DT_LowCongestionDataPlaneRule: dataTypeId: " + dataTypeId);
+        System.out.println("--> DT_LowCongestionDataPlaneRule is ON");
     }
 
     @Override
@@ -64,7 +60,7 @@ public class DT_LowCongestionDataPlaneRule extends AbstractDataPlaneRule impleme
 
         UnicastHeader packetHeader = up.getHeader();
         long dataTypeId = packetHeader.getDataType();
-        System.out.println("DT_LowCongestionDataPlaneRule: dataTypeId: " + dataTypeId);
+        System.out.println("--> DT_LowCongestionDataPlaneRule is ON");
         //        if (packetHeader.getDataType() == provaDataTypeId) {
         if (Arrays.stream(dataTypeIdsToConsider).anyMatch(x -> x==dataTypeId)) {
             int pathLen = up.getDest().length;
@@ -135,8 +131,8 @@ public class DT_LowCongestionDataPlaneRule extends AbstractDataPlaneRule impleme
                     packetHeader.setDest(null);
                     up.setRetry((byte) 0);
                     System.out.println("DT_LowCongestionDataPlaneRule: dropping " + dataType + " packet with seqNumber: " + seqNumber);
-//                }else if (finalDelay > 0){
-                }else if (false){
+                }else if (finalDelay > 0){
+//                }else if (false){
                     /*
                      * Consider delay
                      */

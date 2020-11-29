@@ -327,7 +327,7 @@ public class DTControllerClientSender {
 
                     dataTypeProbability = rampUtils.nextRandomInt(3); //0,1,2
 //                    boolean droppable = (rampUtils.nextRandomInt(2) == 1) ? true : false; //0,1
-                    boolean delayable = (rampUtils.nextRandomInt(3) != 1) ? true : false; //0,1
+                    boolean delayable = (rampUtils.nextRandomInt(10) == 1) ? true : false; // 10%
 
                     boolean droppable = true;
 //                    boolean delayable = true;
@@ -345,9 +345,21 @@ public class DTControllerClientSender {
 
                     long sendingTime = System.currentTimeMillis() - preWhileTime;
 
+                    long turnOnLow = 650;
+                    long turnOnMedium = 1150;
+                    long turnOnHigh = 1650;
+
 
                     if (sendingTime > 10000 && sendingTime < 10100){
-                        packetsPerSecond = 500;
+                        packetsPerSecond = turnOnLow;
+                        nanosecondsToSleep = (long) Math.ceil(Math.pow(10,9) / packetsPerSecond);
+                    }
+                    else if (sendingTime > 20000 && sendingTime < 20100){
+                        packetsPerSecond = turnOnMedium;
+                        nanosecondsToSleep = (long) Math.ceil(Math.pow(10,9) / packetsPerSecond);
+                    }
+                    else if (sendingTime > 30000 && sendingTime < 30100){
+                        packetsPerSecond = turnOnHigh;
                         nanosecondsToSleep = (long) Math.ceil(Math.pow(10,9) / packetsPerSecond);
                     }
 
@@ -481,7 +493,7 @@ public class DTControllerClientSender {
 
                 long preForTime = System.currentTimeMillis();
 
-                for (int i = 0; i < 750; i++) {
+                for (int i = 0; i < 3000; i++) {
                     packetPerSecondIteration++;
 
                     dataTypeProbability = rampUtils.nextRandomInt(3); //0,1,2
