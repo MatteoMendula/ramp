@@ -4,7 +4,7 @@ The following code has been developed for the "Digital Twin Management in Indust
 
 The testbed simulates the communication between two clients by means of an intermediary node. The sender and the receiver do not communicate directly each other so a Controller is in charge of coordinate their communication by easing the discovery process of a possible route.
 
-![Alt text](./images/digital_twin.jpg?raw=true "RAMP Logo") 
+![Alt text](../../../../images/digital_twin.jpg?raw=true "RAMP Logo") 
 
 They start comminicatin
 
@@ -31,6 +31,6 @@ The sender (S) starts sending at 1650 pkt/s and in 4 seconds the network is cong
 The node in the middle (M) detects the congestion and notifies the controller which sends to S a "HighCongestion rule" that has to be applied. Packets are not dropped anymore in order to do not lose knowledge about the network, so the controller helps S and R to establish a os route. Packets are now arriving to R with a latency of about 20ms.
 The drowback is that packets are not wrapped at the application level anymore, so no other network adjustements can be made at the application level.
 
-![Alt text](./images/graph.png?raw=true "RAMP Logo") 
+![Alt text](../../../../images/graph.png?raw=true "RAMP Logo") 
 
 The graph below shows the relation between the simulation time and the corresponding latencies while indicating the how external metrics are changed.
