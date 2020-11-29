@@ -6,7 +6,6 @@ The testbed simulates the communication between two clients by means of an inter
 
 ![Alt text](../../../../images/digital_twin.jpg?raw=true "RAMP Logo") 
 
-They start comminicatin
 
 ## Testbed description
 
