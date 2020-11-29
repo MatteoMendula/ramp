@@ -33,7 +33,6 @@ The drowback is that packets are not wrapped at the application level anymore, s
 
 The graph below shows the relation between the simulation time and the corresponding latencies while indicating the how external metrics are changed.
 
-[comment]: <> ![Alt text](http://mattestorage.it/dt/graph.png "RESULTS") 
 <p align="center">
   <img src="http://mattestorage.it/dt/graph.png" alt="RAMP scenario"/>
 </p>
